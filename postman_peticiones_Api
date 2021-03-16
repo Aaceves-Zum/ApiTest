@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "9dd5d356-185f-490f-8620-de5507fe2408",
+		"name": "ali",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Socios Sin parametros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "contacto",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "personales",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "datosFiscales",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "domicilio",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "empleo",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/apiv1/socios/obtenersocios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiv1",
+						"socios",
+						"obtenersocios"
+					],
+					"query": [
+						{
+							"key": "contacto",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Socios Con parametros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "contacto",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "personales",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "datosFiscales",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "domicilio",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "empleo",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/apiv1/socios/obtenersocios?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiv1",
+						"socios",
+						"obtenersocios"
+					],
+					"query": [
+						{
+							"key": "contacto",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cuentas con Parametros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IdSocio",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "registro",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "credito",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/apiv1/cuentas/obtenercuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiv1",
+						"cuentas",
+						"obtenercuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cuentas Sin Parametros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IdSocio",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "registro",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "credito",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/apiv1/cuentas/obtenercuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apiv1",
+						"cuentas",
+						"obtenercuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movimientos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
